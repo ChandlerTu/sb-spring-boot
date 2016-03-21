@@ -38,6 +38,6 @@ public class HelloControllerIT {
 	@Test
 	public void getHello() throws Exception {
 		ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
-		assertThat(response.getBody(), equalTo("Jenkins test 3, Greetings from Spring Boot!"));
+		assertThat(response.getBody(), equalTo("Jenkins test 4, Greetings from Spring Boot!"));
 	}
 }
